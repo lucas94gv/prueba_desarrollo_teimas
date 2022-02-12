@@ -2,7 +2,7 @@ class Api::V1::AccountsController < ApiController
 
     def index
         
-        accounts = Account.all
+        accounts = Account.all 
 
         accounts_j = accounts.map do |account| 
         {

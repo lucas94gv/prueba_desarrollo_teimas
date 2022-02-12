@@ -8,7 +8,7 @@ class Api::V1::AccountsController < ApiController
         {
             customer: account.customer.name,
             type_account: account.type_account.name
-        }
+        } 
         end
 
         render json: accounts_j

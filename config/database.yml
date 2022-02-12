@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  username: postgres
+  password: 33259471
+
+development:
+  <<: *default
+  database: prueba_teimas_ddbb
+
+test:
+  <<: *default
+  database: prueba_teimas_ddbb
+
+production:
+  <<: *default
+  database: prueba_teimas_ddbb
+  username: postgres
+  password: 33259471

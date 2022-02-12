@@ -1,7 +1,7 @@
 # INSTALACIÓN
 
 ```bash
-git clone git@github.com:lucas94gv/development_teimas.git
+git clone https://github.com/lucas94gv/prueba_desarrollo_teimas
 ```
 * cambiar versión de ruby en .ruby-version y Gemfile si fuera necesario
 

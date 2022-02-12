@@ -8,14 +8,14 @@ default: &default
 
 development:
   <<: *default
-  database: prueba_teimas_ddbb
+  database: development_teimas_ddbb
 
 test:
   <<: *default
-  database: prueba_teimas_ddbb
+  database: development_teimas_ddbb
 
 production:
   <<: *default
-  database: prueba_teimas_ddbb
+  database: development_teimas_ddbb
   username: postgres
   password: 33259471

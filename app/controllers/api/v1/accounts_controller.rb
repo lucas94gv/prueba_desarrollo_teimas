@@ -4,7 +4,7 @@ class Api::V1::AccountsController < ApiController
         
         accounts = Account.all
 
-        accounts_j = accounts.map do |account|
+        accounts_j = accounts.map do |account| 
         {
             customer: account.customer.name,
             type_account: account.type_account.name

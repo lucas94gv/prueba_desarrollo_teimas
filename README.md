@@ -1,24 +1,29 @@
-# README
+# INSTALACIÓN
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```bash
+git clone git@github.com:lucas94gv/development_teimas.git
+```
+* cambiar versión de ruby en .ruby-version y Gemfile si fuera necesario
 
-Things you may want to cover:
+* cambiar contraseña postgres en config/database.yml
 
-* Ruby version
+```ruby
 
-* System dependencies
+rails db:create
 
-* Configuration
+rails db:migrate
 
-* Database creation
+bundle install
 
-* Database initialization
+yarn add @rails/webpacker
 
-* How to run the test suite
+bundle update webpacker
 
-* Services (job queues, cache servers, search engines, etc.)
+rails create_data
 
-* Deployment instructions
+rails s
+```
 
-* ...
+# HERRAMIENTAS
+* Ruby 2.6.6
+* Rails 6.1.4.1
